@@ -4,13 +4,15 @@ import static Växthotell.Näringsvätska.MINERALTVATTEN;
 
 public class Kaktus extends Växter {
 
+
     public Kaktus(double längd, String namn) {
         super(längd, namn);
     }
 
     @Override
     public double vätskeMängd() {
-        return 0.02 * getLängd();
+
+        return 0.02;
     }
 
     public String mängdVätska() {

@@ -1,6 +1,5 @@
 package Växthotell;
 import javax.swing.*;
-import java.util.Locale;
 
 public class Frågeruta {
 
@@ -11,16 +10,17 @@ public class Frågeruta {
         Kaktus Igge = new Kaktus(0.2, "Igge");
 
         String namn = JOptionPane.showInputDialog("Vilken växt ska få mat?");
-            switch (namn.toUpperCase(Locale.ROOT)) {
-                case "LAURA" -> JOptionPane.showMessageDialog(null, Laura.mängdVätska());
-                case "IGGE" -> JOptionPane.showMessageDialog(null, Igge.mängdVätska());
-                case "PUTTE" -> JOptionPane.showMessageDialog(null, Putte.mängdVätska());
-                case "MEATLOAF" -> JOptionPane.showMessageDialog(null, Meatloaf.mängdVätska());
-                case "" -> JOptionPane.showMessageDialog(null, "Du måste skriva in ett namn");
-                default -> JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet på hotellet");
-
-
-
+        if (namn.equalsIgnoreCase(Laura.getNamn())) {
+            JOptionPane.showMessageDialog(null, Laura.mängdVätska());
+        } else if (namn.equalsIgnoreCase(Putte.getNamn())) {
+            JOptionPane.showMessageDialog(null, Putte.mängdVätska());
+        } else if (namn.equalsIgnoreCase(Meatloaf.getNamn())) {
+            JOptionPane.showMessageDialog(null, Meatloaf.mängdVätska());
+        } else if (namn.equalsIgnoreCase(Igge.getNamn())) {
+            JOptionPane.showMessageDialog(null, Igge.mängdVätska());
+        } else {
+            JOptionPane.showMessageDialog(null,
+                    "Det finns ingen växt med det namnet på hotellet!");
 
             }
 

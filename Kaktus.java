@@ -12,12 +12,12 @@ public class Kaktus extends Växter {
     @Override
     public double vätskeMängd() {
 
-        return 0.02;
+        return 2;
     }
 
     public String mängdVätska() {
         double mängd = vätskeMängd();
-        String m = getNamn() + " behöver " + mängd + " liter " + MINERALTVATTEN.typ;
+        String m = getNamn() + " behöver " + String.format("%.0f", mängd) + " cl " + MINERALTVATTEN.typ;
         return m;
     }
 }

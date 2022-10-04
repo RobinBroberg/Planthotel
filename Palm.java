@@ -11,6 +11,7 @@ public class Palm extends Växter {
 
     @Override
     public double vätskeMängd() {
+
         return 0.5*getLängd();
     }
     public String mängdVätska(){

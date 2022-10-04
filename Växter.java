@@ -4,7 +4,7 @@ abstract class Växter implements vätskeBehov {
 
     private  double längd;
 
-    private String namn;
+    protected String namn;
 
     public double getLängd() {
 

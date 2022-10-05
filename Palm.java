@@ -12,11 +12,12 @@ public class Palm extends Växter {
     @Override
     public double vätskeMängd() {
 
-        return 0.5*getLängd();
+        return 0.5 * längd; // Liter
     }
-    public String mängdVätska(){
+
+    public String mängdVätska() {
         double mängd = vätskeMängd();
-        String m = getNamn() + " behöver " + mängd + " liter " + KRANVATTEN.typ;
+        String m = namn + " behöver " + mängd + " liter " + KRANVATTEN.typ + " per dag";
         return m;
     }
 }

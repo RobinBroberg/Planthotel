@@ -1,9 +1,9 @@
 package Växthotell;
 
 public enum Näringsvätska {
-    MINERALTVATTEN ("mineralvatten"),
-    PROTEINDRYCK ("proteindryck"),
-    KRANVATTEN ("kranvatten");
+    MINERALTVATTEN("mineralvatten"),
+    PROTEINDRYCK("proteindryck"),
+    KRANVATTEN("kranvatten");
 
     public final String typ;
 

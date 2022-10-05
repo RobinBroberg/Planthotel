@@ -12,12 +12,12 @@ public class Köttätande extends Växter {
     @Override
     public double vätskeMängd() {
 
-        return 0.1 + (0.2 * getLängd());
+        return 0.1 + (0.2 * längd); // Liter
     }
 
     public String mängdVätska() {
         double mängd = vätskeMängd();
-        String m = getNamn() + " behöver " + mängd + " liter " + PROTEINDRYCK.typ;
+        String m = namn + " behöver " + mängd + " liter " + PROTEINDRYCK.typ + " per dag";
         return m;
     }
 }

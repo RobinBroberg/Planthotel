@@ -9,6 +9,7 @@ public class Frågeruta {
         Palm palm2 = new Palm(1, "Putte");
         Köttätande köttätare = new Köttätande(0.7, "Meatloaf");
         Kaktus kaktus = new Kaktus(0.2, "Igge");
+
         boolean run = true;
         while (run) {
             String namn = JOptionPane.showInputDialog("Vilken växt ska få mat?\nVill du avsluta? Skriv \"Stopp\"");

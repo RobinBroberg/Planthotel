@@ -7,8 +7,8 @@ public enum Näringsvätska {
 
     public final String typ;
 
-    Näringsvätska(String s) {
-        typ = s;
+    Näringsvätska(String t) {
+        typ = t;
 
     }
 }

@@ -2,9 +2,9 @@ package Växthotell;
 
 import javax.swing.*;
 
-public class Frågeruta {
+public class Program {
 
-    public Frågeruta() {
+    public Program() {
         Palm palm1 = new Palm(5, "Laura");
         Palm palm2 = new Palm(1, "Putte");
         Köttätande köttätare = new Köttätande(0.7, "Meatloaf");

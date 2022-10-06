@@ -9,14 +9,13 @@ public class Kaktus extends Växter {
     }
 
     @Override
-    public double vätskeMängd() {
+    public double näringsBehov() {
 
         return 2; // Centiliter
     }
 
-    public String mängdVätska() {
-        double mängd = vätskeMängd();
-        String m = namn + " behöver " + String.format("%.0f", mängd) + " cl " + MINERALTVATTEN.typ + " per dag";
-        return m;
+    public String mängdVätska() { // polymorfism
+        double mängd = näringsBehov();
+        return namn + " behöver " + String.format("%.0f", mängd) + " cl " + MINERALTVATTEN.typ + " per dag";
     }
 }

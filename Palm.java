@@ -10,14 +10,13 @@ public class Palm extends Växter {
     }
 
     @Override
-    public double vätskeMängd() {
+    public double näringsBehov() {
 
         return 0.5 * längd; // Liter
     }
 
-    public String mängdVätska() {
-        double mängd = vätskeMängd();
-        String m = namn + " behöver " + mängd + " liter " + KRANVATTEN.typ + " per dag";
-        return m;
+    public String mängdVätska() { // polymorfism
+        double mängd = näringsBehov();
+        return namn + " behöver " + mängd + " liter " + KRANVATTEN.typ + " per dag";
     }
 }
